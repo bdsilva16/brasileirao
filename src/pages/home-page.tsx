@@ -36,7 +36,7 @@ export default function HomePage({ navigation }) {
             victories: team['vitorias'],
             ties: team['empates'],
             defeats: team['derrotas'],
-            last_games:team['ultimos_jogos']
+            last_games: team['ultimos_jogos']
 
           };
 
@@ -79,7 +79,7 @@ export default function HomePage({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#333',
+    backgroundColor: '#f6cb60',
     alignItems: 'center',
     justifyContent: 'flex-start',
     marginTop: 30,
@@ -94,9 +94,11 @@ const styles = StyleSheet.create({
     color: '#df9000'
   },
   table: {
+    backgroundColor: '#df9000',
     flex: 1,
-    width: "95%",
-    margin: 10
+    width: "90%",
+    margin: 10,
+    borderRadius:10
 
   },
   item: {
@@ -105,12 +107,12 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     paddingHorizontal: 5,
     paddingTop: 8,
-    height: 50
+    height: 60
   },
   team_shield: {
-    width: 30,
-    height: 30,
-    marginRight: 15
+    width: 40,
+    height: 40,
+    marginRight: 15,
   },
   team_name: {
     fontSize: 20,
@@ -125,13 +127,11 @@ const styles = StyleSheet.create({
   },
   psText: {
     fontSize: 15,
-    marginRight:150,
+    marginRight: 150,
     fontWeight: '700',
     color: '#df9000',
-    marginTop:20
+    marginTop: 20
 
- 
-    
   },
 
 });
